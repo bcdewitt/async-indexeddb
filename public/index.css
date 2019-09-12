@@ -1,0 +1,30 @@
+@import './theme.css';
+
+html, body {
+  background: var(--color-primary);
+  color: var(--color-primary-contrast-minor);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-primary-contrast-major);
+}
+
+.app-message:not(:empty) {
+  box-sizing: border-box;
+  display: block;
+  position: sticky;
+  top: 0;
+  color: var(--color-primary-contrast-major);
+  padding: var(--gap-1);
+}
+
+.app-message--danger {
+  background: var(--color-danger);
+  color: var(--color-danger-contrast-major);
+}
+
+main, aside {
+  padding: var(--gap-1);
+}
